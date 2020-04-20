@@ -3,20 +3,19 @@
 /* mode sombre */
 /* mode clair */
 /* cards */
-/** HEADER **/
 /* switch */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-/* line 4, ../scss/_components.scss */
+/* line 2, ../scss/_components.scss */
 .switch-container {
   height: 4.5rem;
   position: relative;
   top: 1rem; }
 
-/* line 9, ../scss/_components.scss */
+/* line 7, ../scss/_components.scss */
 .switch-container__checkbox {
   display: inline-block;
   position: relative; }
-  /* line 12, ../scss/_components.scss */
+  /* line 10, ../scss/_components.scss */
   .switch-container__checkbox label {
     background: linear-gradient(to right, #378fe6, #3eda82);
     border-radius: 2rem;
@@ -26,10 +25,10 @@
     width: 5rem;
     height: 2.5rem;
     z-index: 2; }
-    /* line 21, ../scss/_components.scss */
+    /* line 19, ../scss/_components.scss */
     .switch-container__checkbox label:hover {
       cursor: pointer; }
-    /* line 24, ../scss/_components.scss */
+    /* line 22, ../scss/_components.scss */
     .switch-container__checkbox label::after {
       content: " ";
       background: #1f212e;
@@ -43,15 +42,15 @@
       width: 2rem;
       height: 2rem;
       z-index: 3; }
-  /* line 40, ../scss/_components.scss */
+  /* line 38, ../scss/_components.scss */
   .switch-container__checkbox input {
     visibility: hidden;
     position: absolute;
     z-index: 2; }
-    /* line 44, ../scss/_components.scss */
+    /* line 42, ../scss/_components.scss */
     .switch-container__checkbox input:checked + label {
       background: #aeb3cb; }
-    /* line 47, ../scss/_components.scss */
+    /* line 45, ../scss/_components.scss */
     .switch-container__checkbox input:checked + label::after {
       transform: translateX(calc(100% + 0.6rem));
       background: #f5f7ff;
