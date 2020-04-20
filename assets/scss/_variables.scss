@@ -1,0 +1,35 @@
+/* couleurs */
+$lime-green: hsl(163, 72%, 41%);
+$bright-red: hsl(356, 69%, 56%);
+
+/* couleur header des cartes */
+$facebook: hsl(195, 100%, 50%);
+$twitter: hsl(203, 89%, 53%);
+$instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+$youtube: hsl(348, 97%, 39%);
+
+/* mode sombre */
+$toggle-theme-on: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+
+$dark-bottom-bg: hsl(230, 17%, 14%);
+$dark-top-bg: hsl(232, 19%, 15%);
+$dark-bg: linear-gradient(to bottom, $dark-top-bg 32%, transparent 0%),
+    linear-gradient(to top, $dark-bottom-bg 73%, transparent 0%);
+
+$dark-card-bg: hsl(228, 28%, 20%);
+$dark-main-text: hsl(0, 0%, 100%);
+$dark-text: hsl(228, 34%, 66%);
+
+/* mode clair */
+$toggle-theme-off: hsl(230, 22%, 74%);
+
+$light-bottom-bg: hsl(0, 0%, 100%);
+$light-top-bg: hsl(225, 100%, 98%);
+$light-bg: linear-gradient(to bottom, $light-top-bg 32%, transparent 0%),
+    linear-gradient(to top, $light-bottom-bg 73%, transparent 0%);
+$light-card-bg: hsl(227, 47%, 96%);
+$light-main-text: hsl(230, 17%, 14%);
+$light-text: hsl(228, 12%, 44%);
+
+/* cards */
+$round: 1rem;

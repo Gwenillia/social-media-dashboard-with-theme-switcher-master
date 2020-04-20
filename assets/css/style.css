@@ -1,0 +1,332 @@
+/* couleurs */
+/* couleur header des cartes */
+/* mode sombre */
+/* mode clair */
+/* cards */
+/** HEADER **/
+/* switch */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+/* line 4, ../scss/_components.scss */
+.switch-container {
+  height: 4.5rem;
+  position: relative;
+  top: 1rem; }
+
+/* line 9, ../scss/_components.scss */
+.switch-container__checkbox {
+  display: inline-block;
+  position: relative; }
+  /* line 12, ../scss/_components.scss */
+  .switch-container__checkbox label {
+    background: linear-gradient(to right, #378fe6, #3eda82);
+    border-radius: 2rem;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease-out;
+    width: 5rem;
+    height: 2.5rem;
+    z-index: 2; }
+    /* line 21, ../scss/_components.scss */
+    .switch-container__checkbox label:hover {
+      cursor: pointer; }
+    /* line 24, ../scss/_components.scss */
+    .switch-container__checkbox label::after {
+      content: " ";
+      background: #1f212e;
+      border-radius: 50%;
+      position: absolute;
+      top: 0.24rem;
+      left: 0.2rem;
+      transform: translateX(0);
+      transition: transform 0.3s linear;
+      transition: ease-in-out 0.3s;
+      width: 2rem;
+      height: 2rem;
+      z-index: 3; }
+  /* line 40, ../scss/_components.scss */
+  .switch-container__checkbox input {
+    visibility: hidden;
+    position: absolute;
+    z-index: 2; }
+    /* line 44, ../scss/_components.scss */
+    .switch-container__checkbox input:checked + label {
+      background: #aeb3cb; }
+    /* line 47, ../scss/_components.scss */
+    .switch-container__checkbox input:checked + label::after {
+      transform: translateX(calc(100% + 0.6rem));
+      background: #f5f7ff;
+      transition: ease-in-out 0.3s; }
+
+/* theme */
+/* line 3, ../scss/_base.scss */
+.theme-light {
+  background: linear-gradient(to bottom, #f5f7ff 32%, transparent 0%), linear-gradient(to top, white 73%, transparent 0%);
+  color: #1e202a;
+  transition: ease-in-out 1s; }
+  /* line 7, ../scss/_base.scss */
+  .theme-light .card-container {
+    background: #f0f2fa; }
+  /* line 10, ../scss/_base.scss */
+  .theme-light .card-container--facebook {
+    border-top: 1rem solid deepskyblue; }
+  /* line 13, ../scss/_base.scss */
+  .theme-light .card-container--twitter {
+    border-top: 1rem solid #1ca0f2; }
+  /* line 16, ../scss/_base.scss */
+  .theme-light .card-content__instagram {
+    background: linear-gradient(to right, #fdc468, #df4996);
+    background-repeat: no-repeat;
+    background-size: auto 1rem;
+    border-radius: 1rem;
+    position: relative;
+    padding-top: 5rem;
+    height: 19rem;
+    max-height: 19rem;
+    top: -5rem; }
+  /* line 27, ../scss/_base.scss */
+  .theme-light .card-container--instagram {
+    height: 24rem;
+    max-height: 24rem; }
+  /* line 31, ../scss/_base.scss */
+  .theme-light .card-container--youtube {
+    border-top: 1rem solid #c4032a; }
+  /* line 34, ../scss/_base.scss */
+  .theme-light * {
+    color: #63687e; }
+  /* line 37, ../scss/_base.scss */
+  .theme-light h1,
+  .theme-light .card-content__compteur,
+  .theme-light .b,
+  .theme-light a {
+    color: #1e202a; }
+
+/* line 45, ../scss/_base.scss */
+.theme-dark {
+  transition: ease-in-out 1s;
+  background: linear-gradient(to bottom, #1f212e 32%, transparent 0%), linear-gradient(to top, #1e202a 73%, transparent 0%);
+  color: white; }
+  /* line 49, ../scss/_base.scss */
+  .theme-dark .card-container {
+    background: #252a41; }
+  /* line 52, ../scss/_base.scss */
+  .theme-dark .card-container--facebook {
+    border-top: 1rem solid deepskyblue; }
+  /* line 55, ../scss/_base.scss */
+  .theme-dark .card-container--twitter {
+    border-top: 1rem solid #1ca0f2; }
+  /* line 58, ../scss/_base.scss */
+  .theme-dark .card-content__instagram {
+    background: linear-gradient(to right, #fdc468, #df4996);
+    background-repeat: no-repeat;
+    background-size: auto 1rem;
+    border-radius: 1rem;
+    position: relative;
+    padding-top: 5rem;
+    height: 19rem;
+    max-height: 19rem;
+    top: -5rem; }
+  /* line 69, ../scss/_base.scss */
+  .theme-dark .card-container--instagram {
+    height: 24rem;
+    max-height: 24rem; }
+  /* line 73, ../scss/_base.scss */
+  .theme-dark .card-container--youtube {
+    border-top: 1rem solid #c4032a; }
+  /* line 76, ../scss/_base.scss */
+  .theme-dark * {
+    color: #8b97c6; }
+  /* line 79, ../scss/_base.scss */
+  .theme-dark h1,
+  .theme-dark .card-content__compteur,
+  .theme-dark .b,
+  .theme-dark a {
+    color: white; }
+
+/* general */
+/* line 88, ../scss/_base.scss */
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0; }
+
+/* line 93, ../scss/_base.scss */
+html {
+  font-size: 62.5%;
+  width: 100%; }
+
+/* line 103, ../scss/_base.scss */
+body {
+  font-size: 14px;
+  font-size: 1.4rem;
+  height: 100%;
+  margin: 5rem 9% 0 9%; }
+
+/* line 109, ../scss/_base.scss */
+ul {
+  list-style: none;
+  padding: 0; }
+
+/* Header */
+/* line 116, ../scss/_base.scss */
+header {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between; }
+
+/* line 122, ../scss/_base.scss */
+.title p {
+  font-weight: 700; }
+
+/* line 126, ../scss/_base.scss */
+.switch-container__checkbox span {
+  font-weight: 700;
+  position: absolute;
+  top: 0.4rem;
+  left: -9rem; }
+
+/* main content */
+/* line 134, ../scss/_base.scss */
+.general-stats,
+.overview-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  column-gap: 6rem;
+  row-gap: 4rem;
+  margin-top: 4rem; }
+
+/* line 144, ../scss/_base.scss */
+.card-container {
+  border-radius: 1rem;
+  height: 23rem;
+  max-height: 23rem; }
+
+/* line 150, ../scss/_base.scss */
+.overview-title {
+  margin-top: 6rem;
+  font-size: 2.8rem; }
+
+/* line 155, ../scss/_base.scss */
+.card-content {
+  margin-top: 5rem;
+  text-align: center; }
+  /* line 158, ../scss/_base.scss */
+  .card-content__title {
+    margin-bottom: 2rem; }
+  /* line 161, ../scss/_base.scss */
+  .card-content__compteur {
+    font-size: 5rem;
+    font-weight: 700; }
+  /* line 165, ../scss/_base.scss */
+  .card-content__followers {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem; }
+  /* line 170, ../scss/_base.scss */
+  .card-content__arrow {
+    color: #1db489;
+    font-weight: 700;
+    margin-top: 2.2rem; }
+    /* line 174, ../scss/_base.scss */
+    .card-content__arrow img {
+      position: relative;
+      bottom: 0.25rem; }
+  /* line 179, ../scss/_base.scss */
+  .card-content--grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    margin: 2.5rem 0 0 0;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto); }
+    /* line 186, ../scss/_base.scss */
+    .card-content--grid .a {
+      grid-column: 1;
+      grid-row: 1;
+      font-weight: 700;
+      font-size: 1.6rem; }
+    /* line 192, ../scss/_base.scss */
+    .card-content--grid .b {
+      grid-column: 1;
+      grid-row: 2;
+      font-size: 3.4rem;
+      font-weight: 700; }
+    /* line 199, ../scss/_base.scss */
+    .card-content--grid .a,
+    .card-content--grid .b {
+      text-align: left;
+      margin-left: 3rem; }
+    /* line 204, ../scss/_base.scss */
+    .card-content--grid .d {
+      margin-top: 1.5rem;
+      grid-row: 2;
+      grid-column: 2; }
+      /* line 208, ../scss/_base.scss */
+      .card-content--grid .d img {
+        position: relative;
+        bottom: 0.25rem; }
+
+/* .overview-stats {
+    display: grid;
+    //grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    column-gap: 6rem;
+    row-gap: 4rem;
+    margin-top: 4rem;
+}*/
+/* line 225, ../scss/_base.scss */
+.overview-stats .card-container {
+  max-height: 15rem; }
+
+/* line 229, ../scss/_base.scss */
+.attribution {
+  font-size: 1rem;
+  width: 100%;
+  position: relative;
+  bottom: -5rem;
+  text-align: center; }
+  /* line 235, ../scss/_base.scss */
+  .attribution a {
+    text-decoration: none; }
+
+/* Responsive */
+@media (max-width: 682px) {
+  /* line 243, ../scss/_base.scss */
+  .theme-light .switch-container {
+    border-top: 1px solid #63687e; }
+
+  /* line 249, ../scss/_base.scss */
+  .theme-dark .switch-container {
+    border-top: 1px solid #8b97c6; }
+
+  /* line 254, ../scss/_base.scss */
+  h1 {
+    font-size: 2.1rem; }
+
+  /* line 258, ../scss/_base.scss */
+  header {
+    display: grid;
+    grid-auto-columns: 1fr;
+    width: 100%; }
+    /* line 262, ../scss/_base.scss */
+    header .switch-container {
+      text-align: right;
+      width: 100%;
+      margin-top: 1rem;
+      padding-top: 1.5rem; }
+      /* line 267, ../scss/_base.scss */
+      header .switch-container__checkbox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); }
+        /* line 270, ../scss/_base.scss */
+        header .switch-container__checkbox span {
+          grid-column: 1;
+          margin-left: 9rem; }
+        /* line 274, ../scss/_base.scss */
+        header .switch-container__checkbox label {
+          grid-column: 2;
+          justify-self: right; }
+
+  /* line 282, ../scss/_base.scss */
+  .general-stats {
+    margin-top: 1.5rem; } }
+
+/*# sourceMappingURL=style.css.map */

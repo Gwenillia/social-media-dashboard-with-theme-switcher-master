@@ -1,0 +1,53 @@
+/** HEADER **/
+
+/* switch */
+.switch-container {
+    height: 4.5rem;
+    position: relative;
+    top: 1rem;
+}
+.switch-container__checkbox {
+    display: inline-block;
+    position: relative;
+    label {
+        background: $toggle-theme-on;
+        border-radius: 2rem;
+        display: inline-block;
+        position: relative;
+        transition: all 0.3s ease-out;
+        width: 5rem;
+        height: 2.5rem;
+        z-index: 2;
+        &:hover {
+            cursor: pointer;
+        }
+        &::after {
+            content: " ";
+            background: $dark-top-bg;
+            border-radius: 50%;
+            position: absolute;
+            top: 0.24rem;
+            left: 0.2rem;
+            transform: translateX(0);
+            transition: transform 0.3s linear;
+            transition: ease-in-out 0.3s;
+            width: 2rem;
+            height: 2rem;
+            z-index: 3;
+        }
+    }
+
+    input {
+        visibility: hidden;
+        position: absolute;
+        z-index: 2;
+        &:checked + label {
+            background: $toggle-theme-off;
+        }
+        &:checked + label::after {
+            transform: translateX(calc(100% + 0.6rem));
+            background: $light-top-bg;
+            transition: ease-in-out 0.3s;
+        }
+    }
+}
