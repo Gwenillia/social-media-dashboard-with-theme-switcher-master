@@ -262,6 +262,11 @@ header {
       .card-content--grid .d img {
         position: relative;
         bottom: 0.25rem; }
+    /* line 213, ../scss/_base.scss */
+    .card-content--grid .c,
+    .card-content--grid .d {
+      text-align: right;
+      margin-right: 3rem; }
 
 /* .overview-stats {
     display: grid;
@@ -271,60 +276,60 @@ header {
     row-gap: 4rem;
     margin-top: 4rem;
 }*/
-/* line 225, ../scss/_base.scss */
+/* line 230, ../scss/_base.scss */
 .overview-stats .card-container {
   max-height: 15rem; }
 
-/* line 229, ../scss/_base.scss */
+/* line 234, ../scss/_base.scss */
 .attribution {
   font-size: 1rem;
   width: 100%;
   position: relative;
   bottom: -5rem;
   text-align: center; }
-  /* line 235, ../scss/_base.scss */
+  /* line 240, ../scss/_base.scss */
   .attribution a {
     text-decoration: none; }
 
 /* Responsive */
 @media (max-width: 682px) {
-  /* line 243, ../scss/_base.scss */
+  /* line 248, ../scss/_base.scss */
   .theme-light .switch-container {
     border-top: 1px solid #63687e; }
 
-  /* line 249, ../scss/_base.scss */
+  /* line 254, ../scss/_base.scss */
   .theme-dark .switch-container {
     border-top: 1px solid #8b97c6; }
 
-  /* line 254, ../scss/_base.scss */
+  /* line 259, ../scss/_base.scss */
   h1 {
     font-size: 2.1rem; }
 
-  /* line 258, ../scss/_base.scss */
+  /* line 263, ../scss/_base.scss */
   header {
     display: grid;
     grid-auto-columns: 1fr;
     width: 100%; }
-    /* line 262, ../scss/_base.scss */
+    /* line 267, ../scss/_base.scss */
     header .switch-container {
       text-align: right;
       width: 100%;
       margin-top: 1rem;
       padding-top: 1.5rem; }
-      /* line 267, ../scss/_base.scss */
+      /* line 272, ../scss/_base.scss */
       header .switch-container__checkbox {
         display: grid;
         grid-template-columns: repeat(2, 1fr); }
-        /* line 270, ../scss/_base.scss */
+        /* line 275, ../scss/_base.scss */
         header .switch-container__checkbox span {
           grid-column: 1;
           margin-left: 9rem; }
-        /* line 274, ../scss/_base.scss */
+        /* line 279, ../scss/_base.scss */
         header .switch-container__checkbox label {
           grid-column: 2;
           justify-self: right; }
 
-  /* line 282, ../scss/_base.scss */
+  /* line 287, ../scss/_base.scss */
   .general-stats {
     margin-top: 1.5rem; } }
 
