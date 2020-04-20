@@ -3,9 +3,12 @@
 .theme-light {
     background: $light-bg;
     color: $light-main-text;
-    transition: ease-in-out 1s;
     .card-container {
         background: $light-card-bg;
+        transition: ease-in-out 1s;
+        &:hover {
+            background: $light-card-hover-bg;
+        }
     }
     .card-container--facebook {
         border-top: 1rem solid $facebook;
@@ -33,21 +36,27 @@
     }
     * {
         color: $light-text;
+        transition: ease-in-out 1s;
     }
     h1,
     .card-content__compteur,
     .b,
     a {
         color: $light-main-text;
+        transition: ease-in-out 1s;
     }
 }
 
 .theme-dark {
-    transition: ease-in-out 1s;
     background: $dark-bg;
     color: $dark-main-text;
+    transition: ease-in-out 1s;
     .card-container {
         background: $dark-card-bg;
+        transition: ease-in-out 1s;
+        &:hover {
+            background: $dark-card-hover-bg;
+        }
     }
     .card-container--facebook {
         border-top: 1rem solid $facebook;
@@ -75,12 +84,14 @@
     }
     * {
         color: $dark-text;
+        transition: ease-in-out 1s;
     }
     h1,
     .card-content__compteur,
     .b,
     a {
         color: $dark-main-text;
+        transition: ease-in-out 1s;
     }
 }
 
@@ -145,6 +156,7 @@ header {
     border-radius: $round;
     height: 23rem;
     max-height: 23rem;
+    cursor: pointer;
 }
 
 .overview-title {
@@ -168,7 +180,6 @@ header {
         letter-spacing: 0.2rem;
     }
     &__arrow {
-        color: $lime-green;
         font-weight: 700;
         margin-top: 2.2rem;
         img {
@@ -218,14 +229,22 @@ header {
     }
 }
 
-/* .overview-stats {
+.up-arrow {
+    color: $lime-green;
+}
+
+.down-arrow {
+    color: $bright-red;
+}
+
+.overview-stats {
     display: grid;
     //grid-template-columns: repeat(4, auto);
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25.6, 1fr)) !important;
     column-gap: 6rem;
     row-gap: 4rem;
     margin-top: 4rem;
-}*/
+}
 
 .overview-stats .card-container {
     max-height: 15rem;

@@ -17,6 +17,7 @@ $dark-bg: linear-gradient(to bottom, $dark-top-bg 32%, transparent 0%),
     linear-gradient(to top, $dark-bottom-bg 73%, transparent 0%);
 
 $dark-card-bg: hsl(228, 28%, 20%);
+$dark-card-hover-bg: hsl(228, 28%, 30%);
 $dark-main-text: hsl(0, 0%, 100%);
 $dark-text: hsl(228, 34%, 66%);
 
@@ -28,6 +29,7 @@ $light-top-bg: hsl(225, 100%, 98%);
 $light-bg: linear-gradient(to bottom, $light-top-bg 32%, transparent 0%),
     linear-gradient(to top, $light-bottom-bg 73%, transparent 0%);
 $light-card-bg: hsl(227, 47%, 96%);
+$light-card-hover-bg: hsl(227, 50%, 90%);
 $light-main-text: hsl(230, 17%, 14%);
 $light-text: hsl(228, 12%, 44%);
 
